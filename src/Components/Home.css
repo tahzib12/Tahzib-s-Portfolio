@@ -72,4 +72,5 @@
   /* Hide any other span inside the typed element */
   .typed-js-element span {
     display: none;
-  }
+  } 
+  /* checking pull request */
