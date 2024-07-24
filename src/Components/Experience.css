@@ -35,3 +35,38 @@
     font-weight: bold;
   }
   
+  @media (max-width: 600px) {
+    .job-card {
+      max-width: 70%;
+      flex-direction: column;
+    }
+    
+    .job-title {
+      padding: 5px;
+      width: 100%;
+    }
+    
+    .job-title .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    
+    .job-details p {
+      margin: 5px 0;
+      width: 100%;
+    }
+    
+    .highlight {
+      color: #00ff00;
+      font-weight: bold;
+      font-size: 13px;
+    }
+    .exp{
+      padding: 0px;
+      font-size: 18px;
+    }
+    .title{
+      font-size: 16;
+    }
+  }

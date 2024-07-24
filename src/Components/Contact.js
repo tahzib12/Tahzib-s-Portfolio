@@ -10,7 +10,7 @@ function Contact() {
   return (
     <>
       <div className='container contact' id="contact" style={{ padding: "60px 0px 30px 0px" }}>
-        <h1 data-aos="fade-right" data-aos-duration="1000">Contact :</h1>
+        <h1 data-aos="fade-right" data-aos-duration="1000" className='con'>Contact :</h1>
         <style>
           {` 
              .hoverEffect{
@@ -20,10 +20,18 @@ function Contact() {
             box-shadow: 0px 0px 10px 10px rgba(101,175,10,0.5);
             background-color: yellow;
             }
+            @media (max-width: 600px) {
+              .con{
+                 font-size:18px;
+                  }
+              .hoverEffect{
+                width: 40px !important;
+                height: 40px !important;
+              }
+                 }
+          `}</style>
 
-          `}
-        </style>
-        <div style={{ display: "flex", justifyContent: "center", padding: "5px 20px", height: "100px" }} data-aos="zoom-in-up" data-aos-duration="1000">
+        <div style={{ display: "flex", justifyContent: "center", padding: "5px 20px", height: "100px",alignItems:"center" }} data-aos="zoom-in-up" data-aos-duration="1000" >
           <a href="https://www.instagram.com/tech_tahzib/" style={{ padding: "5px 10px" }} ><img src={insta} alt="instalogo" style={{ width: "50px", height: "50px", borderRadius: "50%", border: "1px solid yellow" }} className="hoverEffect" /></a>
           <a href="https://www.facebook.com/the.tahzib/" style={{ padding: "5px 10px" }}><img src={face} alt="facelogo" style={{ width: "50px", height: "50px", borderRadius: "50%", border: "1px solid yellow" }} className="hoverEffect" /></a>
           <a href="https://www.linkedin.com/in/tahajeeb-ansari-681716230/" style={{ padding: "5px 10px" }}><img src={linkedin} alt="likedlogo" style={{ width: "50px", height: "50px", borderRadius: "50%", border: "1px solid yellow" }} className="hoverEffect" /></a>

@@ -1,7 +1,7 @@
 import React,{useEffect,useRef} from 'react'
 import pdf from '../resume.pdf'
 import './Home.css'
-import profile from '../Assets/hero/hero.avif'
+import profile from '../Assets/hero/profilepic.jpeg'
 import Typed from 'typed.js'
 
 const Home = () => {

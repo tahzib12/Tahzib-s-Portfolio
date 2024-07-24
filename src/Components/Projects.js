@@ -62,12 +62,12 @@ const Projects = () => {
   return (
     <>
       <div className='container projects my-3' id="projects" style={{ padding: "60px 0px 30px 0px" }}>
-        <h1 data-aos="fade-right" data-aos-duration="1000">Projects :</h1>
+        <h1 data-aos="fade-right" data-aos-duration="1000" className='pro'>Projects :</h1>
         <div className='row d-flex justify-content-center align-items-center'>
           {project.map((data) => (
             
-              <div key={data.id} className='my-3 col-md-4 col-sm-6 col-lg-3 mx-4' data-aos="flip-left" data-aos-duration="1000">
-                <div className="card bg-transparent text-light " style={{width: "18rem", padding: "10px", boxShadow: "var(--box-shadow)", height: "315px" }}>
+              <div key={data.id} className='my-3 col-md-4 col-sm-6 col-lg-3 mx-4 ' data-aos="flip-left" data-aos-duration="1000">
+                <div className="card bg-transparent text-light pro-card" style={{width: "18rem", padding: "10px", boxShadow: "var(--box-shadow)", height: "315px" }}>
                   <div className='img d-flex justify-content-center align-items-center'>
                     <img src={data.image} className="card-img-top" alt="images" style={{ width: "250px", height: "130px", border: "1px solid yellow", borderRadius: "5px" }} />
                   </div>
@@ -83,7 +83,18 @@ const Projects = () => {
           ))}
         </div>
       </div>
+      <style>{`
+       @media (max-width: 600px) {
+        .pro{
+        font-size : 18px;
+        }
+        .pro-card{
+        margin: auto;
+        }
+
+      `}</style>
     </>
+    
   )
 }
 

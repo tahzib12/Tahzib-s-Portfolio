@@ -19,7 +19,7 @@
 }
 .home .right .img img{
     width: 250px;
-    height: 250px;
+    height: 240px;
     border-radius: 100%;
     animation-name: colorAnimation;
     animation-duration: 3s;
@@ -40,7 +40,7 @@
 @keyframes colorAnimation{
     0%{
         background-color: blue;
-        transform: translate(0,opx);
+        transform: translate(0,0px);
         box-shadow: 10px 10px 100px 50px blue;
     }
     25%{
@@ -73,4 +73,72 @@
   .typed-js-element span {
     display: none;
   } 
-  /* checking pull request */
+
+  @media (max-width: 600px) {
+    .home{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .home .right{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        
+    }
+    
+    .home .right .img img{
+        width: 180px;
+        height: 170px;
+        border-radius: 100%;
+        animation-name: colorAnimation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        
+    }
+    
+    .home .left{
+        width: 90%;
+        background-color: transparent;
+        text-align: center;
+        padding: 30px;
+        border-radius: 10px;
+        /* border: 1px solid yellow; */
+        box-shadow: var(--box-shadow);
+    }
+    .home .left h1{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+
+    @keyframes colorAnimation{
+        0%{
+            background-color: blue;
+            transform: translate(0,0px);
+            box-shadow: 5px 5px 80px 40px blue;
+        }
+        25%{
+            background-color: rgb(239,244,11);
+            box-shadow: 5px 5px 80px 40px rgb(239,244,11);
+        }
+        50%{
+            background-color: rgb(12,12,199);
+            transform: translate(0,10px);
+            box-shadow: 5px 5px 80px 40px rgb(12,12,199);
+        }
+        75%{
+            background-color: rgb(130,217,160);
+            box-shadow: 5px 5px 80px 40px rgb(12,12,199);
+        }
+        100%{
+            background-color: rgb(50,55,205);
+            transform: translate(0,-0px);
+            box-shadow: 5px 5px 80px 40px rgb(50,55,205);
+        }
+    }
+}

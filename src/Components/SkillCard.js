@@ -32,7 +32,7 @@ const SkillCard = () => {
   return (
     <>
       <div style={{ padding: "60px 0px 30px 0px" }} id="skills">
-        <h1 data-aos="fade-right" data-aos-duration="1000">Skills :</h1>
+        <h1 data-aos="fade-right" data-aos-duration="1000" className='sk'>Skills :</h1>
         <div className="skill-card-container">
           {skills.map((skill, index) => (
             <div className="skill-card" key={index} data-aos="flip-left" data-aos-duration="1000">
