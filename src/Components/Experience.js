@@ -6,7 +6,7 @@ import tronlogo from '../Assets/company/tronaqua.png'
 const Experience = () => {
   return (
     <>
-      <div style={{ padding: "40px 0px 30px 0px" }} id="experience">
+      <div style={{ padding: "60px 0px 0px 0px" }}  id="experience">
         <h1 data-aos="fade-right" data-aos-duration="1000" className='exp'>Experience :</h1>
         <div className="job-card" data-aos="zoom-in" data-aos-duration="1000">
           <div className="job-title">

@@ -76,12 +76,13 @@
 
   @media (max-width: 600px) {
     .home{
+        margin-bottom: 30px !important;
         height: 80vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 20px; 
+        padding: 60px 0px 30px 0px !important;
     }
     .home .right{
         width: 250px;
@@ -91,6 +92,7 @@
     }
     
     .home .right .img img{
+        margin-top: 30px !important;
         width: 180px;
         height: 170px;
         border-radius: 100%;
@@ -141,4 +143,38 @@
             box-shadow: 5px 5px 80px 40px rgb(50,55,205);
         }
     }
+}
+
+@media (min-width: 601px) and  (max-width: 900px) {
+    .home{
+        height: 80vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .home .right{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        padding-top: 50px;
+        
+    }
+    
+    .home .right .img img{
+        width: 210px;
+        height: 200px;
+        
+    }
+    
+    .home .left{
+        width: 90%;
+        
+    }
+    .home .left h1{
+        font-size: 24px;
+    }
+    .btn{
+        font-size: 14px;
+    } 
 }

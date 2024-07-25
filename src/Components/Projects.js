@@ -6,7 +6,6 @@ import Project4 from '../Assets/skills/PASSWORD.png'
 import Project5 from '../Assets/skills/TODO.png'
 import Project6 from '../Assets/skills/weatherApp.png'
 
-
 const project = [
   {
     id: 1,
@@ -61,40 +60,61 @@ const project = [
 const Projects = () => {
   return (
     <>
-      <div className='container projects my-3' id="projects" style={{ padding: "60px 0px 30px 0px" }}>
-        <h1 data-aos="fade-right" data-aos-duration="1000" className='pro'>Projects :</h1>
-        <div className='row d-flex justify-content-center align-items-center'>
+      <div className='container projects mt-3' id="projects" style={{ padding: "60px 0px 30px 0px" }}>
+        <h1 data-aos="fade-right" data-aos-duration="1000" className="pro">Projects :</h1>
+        <div className='row d-flex justify-content-center align-items-center card-alignment'>
           {project.map((data) => (
-            
-              <div key={data.id} className='my-3 col-md-4 col-sm-6 col-lg-3 mx-4 ' data-aos="flip-left" data-aos-duration="1000">
-                <div className="card bg-transparent text-light pro-card" style={{width: "18rem", padding: "10px", boxShadow: "var(--box-shadow)", height: "315px" }}>
-                  <div className='img d-flex justify-content-center align-items-center'>
-                    <img src={data.image} className="card-img-top" alt="images" style={{ width: "250px", height: "130px", border: "1px solid yellow", borderRadius: "5px" }} />
-                  </div>
-                  <div className="card-body text-center">
-                    <h5 className="card-title">{data.title}</h5>
-                    <p className="card-text">{data.description}</p>
-                    <a href={data.demo} className="btn btn-primary mx-3">Demo</a>
-                    <a href={data.code} className="btn btn-outline-warning ">Code</a>
-                  </div>
+            <div key={data.id} className='my-3 col-md-4 col-sm-6 col-lg-3 mx-4 ' data-aos="flip-left" data-aos-duration="1000">
+              <div className="card bg-transparent text-light pro-card" style={{ width: "18rem", padding: "10px", boxShadow: "var(--box-shadow)", height: "315px" }}>
+                <div className='img d-flex justify-content-center align-items-center'>
+                  <img src={data.image} className="card-img-top" alt="images" style={{ width: "250px", height: "130px", border: "1px solid yellow", borderRadius: "5px" }} />
+                </div>
+                <div className="card-body text-center">
+                  <h5 className="card-title">{data.title}</h5>
+                  <p className="card-text">{data.description}</p>
+                  <a href={data.demo} className="btn btn-primary mx-3">Demo</a>
+                  <a href={data.code} className="btn btn-outline-warning ">Code</a>
                 </div>
               </div>
-           
+            </div>
           ))}
         </div>
       </div>
       <style>{`
-       @media (max-width: 600px) {
-        .pro{
-        font-size : 18px;
+        @media (max-width: 600px) {
+        .project{
+            margin-bottom: 40px !important; 
         }
-        .pro-card{
-        margin: auto;
+          .pro {
+          padding: 0px 0px 0px 15px;
+            font-size: 18px;
+          }
+          .pro-card {
+            margin: auto;
+          }
         }
-
+        @media (min-width: 601px) and (max-width: 900px) {
+          .pro {
+            font-size: 24px !important;
+          }
+          .pro-card {
+            padding: 0;
+            margin: 0;
+            width: 90%;
+            gap: 10px;
+          }
+          .card-alignment {
+            justify-content: space-evenly !important;
+          }
+        }
+        @media (min-width: 901px) {
+          .pro-card {
+            width: 100%;
+            margin: auto;
+          }
+        }
       `}</style>
     </>
-    
   )
 }
 

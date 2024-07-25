@@ -21,7 +21,7 @@ const Home = () => {
   
     return (
         <>
-            <div className='container home' id="home">
+            <div className='container home' style={{ padding: "120px 0px 30px 0px" }}  id="home">
                 <div className='left ' data-aos="fade-up-right" data-aos-duration="1000">
                     <h1 ref={typedRef} className="typed-js-element"> </h1>
                     <a href={pdf} download="resume.pdf" className='btn btn-outline-warning'>Download Resume</a>

@@ -31,7 +31,7 @@ const skills = [
 const SkillCard = () => {
   return (
     <>
-      <div style={{ padding: "60px 0px 30px 0px" }} id="skills">
+      <div style={{ padding: "60px 0px 0px 0px" }} id="skills">
         <h1 data-aos="fade-right" data-aos-duration="1000" className='sk'>Skills :</h1>
         <div className="skill-card-container">
           {skills.map((skill, index) => (

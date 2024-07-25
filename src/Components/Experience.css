@@ -49,7 +49,6 @@
     .job-title .logo {
       width: 50px;
       height: 50px;
-      border-radius: 50%;
     }
     
     .job-details p {
@@ -58,15 +57,46 @@
     }
     
     .highlight {
-      color: #00ff00;
-      font-weight: bold;
       font-size: 13px;
     }
     .exp{
-      padding: 0px;
+      padding: 0px 0px 0px 15px;
       font-size: 18px;
     }
     .title{
       font-size: 16;
+    }
+  }
+
+  @media (min-width: 601px) and  (max-width: 900px) {
+    .job-card {
+      max-width: 70%;
+      flex-direction: column;
+    }
+    
+    .job-title {
+      padding: 5px;
+      width: 100%;
+    }
+    
+    .job-title .logo {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .job-details p {
+      margin: 5px 0;
+      width: 100%;
+    }
+    
+    .highlight {
+      font-size: 14px;
+    }
+    .exp{
+      padding: 0px;
+      font-size: 24px;
+    }
+    .title{
+      font-size: 16 !important;
     }
   }

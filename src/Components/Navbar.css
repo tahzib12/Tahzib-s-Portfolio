@@ -1,46 +1,125 @@
-.nav_bar{
-  position: sticky;
-  top:0;
+/* Navbar general styles */
+.nav_bar {
+  background: rgb(11, 26, 51);;
+  position: fixed;
+  top: 0px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav_bar .nav_items{
- padding: 16px ;
- font-size: 1.2rem;
- font-weight: bold;
+
+/* Style for nav items */
+.nav_bar .nav_items {
+  padding: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
-.nav_bar .nav_items:hover{
+
+
+
+/* Style for hamburger button */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* Animation for cross */
+.open .bar1 {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.open .bar3 {
+  opacity: 0;
+}
+
+.open .bar2 {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+.is-current {
+  font-weight: bold;
   border-bottom: 2px solid yellow;
 }
 
+
+/* Hide .largeScreen and show .hamburger at mobile breakpoint */
 @media (max-width: 600px) {
-  .left{
+  .pad2{
+    padding: 5px !important;
+  }
+  .pad1{
+    padding: 50px 5px 5px 5px !important;
+  }
+  .largeScreen {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 10000;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+
+  .menu.open {
+    display: block;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .menu a:hover {
+    border-bottom: 2px solid yellow;
+  }
+}
+
+/* Media queries for tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+  .left {
     margin-top: 4px;
   }
-  
-  .nav_bar{
-    margin: 16px 0px;
-    
-    
+
+  .nav_bar {
+    margin: 16px auto;
+    width: 100%;
   }
-  .nav_bar .nav_items{
-   padding: 5px 5px;
-   font-size: 13px;
-   font-weight: bold;
-  }
-  
-  a{
-    text-decoration: none;
-    color: white;
-  }
-  .nav_bar .nav_items:hover{
-    border-bottom: 2px solid yellow;
+
+  .nav_bar .nav_items {
+    padding: 5px 5px;
+    font-size: 16px;
+    font-weight: bold;
   }
 }
