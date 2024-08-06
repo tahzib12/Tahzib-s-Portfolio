@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="container nav_bar" data-aos="fade-down" data-aos-duration="1000">
+      <div className="container nav_bar" data-aos="fade-down" data-aos-duration="1000" style={{maxWidth: "100%"}}>
         <div className="left nav_items">Portfolio</div>
         <div className="right">
           <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
