@@ -5,6 +5,7 @@ import Project3 from '../Assets/skills/BRC20.png'
 import Project4 from '../Assets/skills/PASSWORD.png'
 import Project5 from '../Assets/skills/TODO.png'
 import Project6 from '../Assets/skills/weatherApp.png'
+import Project7 from '../Assets/skills/team.png'
 
 const project = [
   {
@@ -33,6 +34,14 @@ const project = [
   },
   {
     id: 4,
+    image: Project7,
+    title: 'My Team Portfolio',
+    description: 'This is the portfolio of my team designed and developed by.',
+   demo: 'https://mindshare-pi.vercel.app/',
+    code: 'https://github.com/tahzib12/mindshare'
+  },
+  {
+    id: 5,
     image: Project4,
     title: 'Password Generator',
     description: 'This is the Password generator App.',
@@ -40,7 +49,7 @@ const project = [
     code: 'https://github.com/tahzib12/Password-Generator'
   },
   {
-    id: 5,
+    id: 6,
     image: Project5,
     title: 'Todo List',
     description: 'This is the Todo List App.',
@@ -48,7 +57,7 @@ const project = [
     code: 'https://github.com/tahzib12/Todo-List'
   },
   {
-    id: 6,
+    id: 7,
     image: Project6,
     title: 'Weather App',
     description: 'This is a Weather App.',

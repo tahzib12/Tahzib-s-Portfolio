@@ -14,7 +14,7 @@ const Experience = () => {
           </div>
           <div className="job-details">
             <h3 style={{ color: "white" }} className='title'>Software Trainee</h3>
-            <p><span className="highlight">April, 2024 Present, Mohali,Punjab-INDIA</span></p>
+            <p><span className="highlight">March 2024 to Aug 2024, Mohali,Punjab-INDIA</span></p>
             <p>Worked on Codeskape</p>
             <p>Worked with the Codeskape Team</p>
           </div>
