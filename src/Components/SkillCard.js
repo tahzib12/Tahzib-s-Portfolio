@@ -15,7 +15,7 @@ const skills = [
     logo: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'
   },
   {
-    name: 'React',
+    name: 'ReactJs',
     logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'
   },
   {
