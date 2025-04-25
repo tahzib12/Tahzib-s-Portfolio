@@ -30,7 +30,7 @@ const project = [
     image: Project7,
     title: 'CorewebFusion',
     description:  `Designed and developed a fully customized portfolio website to showcase the company's projects, services, and expertise.`,
-   demo: 'https://corewebfusion.vercel.app/',
+   demo: 'https://client-dusky-theta.vercel.app/',
     code: 'https://github.com/tahzib12/mindshare'
   },
   {
